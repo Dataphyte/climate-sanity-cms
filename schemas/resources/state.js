@@ -1,6 +1,6 @@
 export default {
-  name: 'resoureces',
-  title: 'Resources',
+  name: 'resoureces-state',
+  title: 'State Resources',
   type: 'document',
   fields: [
     {
@@ -43,7 +43,8 @@ export default {
     {
       name: 'ref_link',
       title: 'Reference Link',
-      type: 'url',
+      type: 'array',
+      of: [{ type: 'url' }],
     },
   ],
 };

@@ -19,5 +19,11 @@ export default {
       title: 'Value',
       type: 'string',
     },
+
+    {
+      name: 'bad',
+      title: 'Bad',
+      type: 'boolean',
+    },
   ],
 };
