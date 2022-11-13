@@ -1,5 +1,5 @@
 export default {
-  name: 'resoureces-state',
+  name: 'resources-state',
   title: 'State Resources',
   type: 'document',
   fields: [
@@ -36,15 +36,27 @@ export default {
 
     {
       name: 'no_of_displaced',
-      title: 'Number of Deaths',
+      title: 'Number of Displaced',
       type: 'number',
     },
 
     {
       name: 'ref_link',
-      title: 'Reference Link',
+      title: 'Reference Links',
       type: 'array',
-      of: [{ type: 'url' }],
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: 'post_title', title: 'Post title', type: 'string' },
+            { name: 'source', title: 'Source', type: 'string' },
+            { name: 'link', title: 'Link', type: 'url' },
+          ],
+          preview: {
+            select: { title: 'post_title' },
+          },
+        },
+      ],
     },
   ],
 };

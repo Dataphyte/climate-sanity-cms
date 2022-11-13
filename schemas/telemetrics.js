@@ -26,4 +26,7 @@ export default {
       type: 'boolean',
     },
   ],
+  preview: {
+    select: { title: 'title', subtitle: 'tag' },
+  },
 };
