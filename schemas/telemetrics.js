@@ -15,14 +15,14 @@ export default {
     },
 
     {
-      name: 'vallue',
+      name: 'value',
       title: 'Value',
       type: 'string',
     },
 
     {
-      name: 'bad',
-      title: 'Bad',
+      name: 'people',
+      title: 'Involves people',
       type: 'boolean',
     },
   ],
