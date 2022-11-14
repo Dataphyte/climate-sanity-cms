@@ -10,8 +10,20 @@ export default {
     },
 
     {
-      name: 'content',
-      title: 'Content',
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+    },
+
+    {
+      name: 'publish_date',
+      title: 'Publish Date',
+      type: 'date',
+    },
+
+    {
+      name: 'author',
+      title: 'Author',
       type: 'string',
     },
 
@@ -19,6 +31,12 @@ export default {
       name: 'image',
       title: 'Post Image',
       type: 'image',
+    },
+
+    {
+      name: 'link',
+      title: 'Link to post',
+      type: 'url',
     },
   ],
 };
